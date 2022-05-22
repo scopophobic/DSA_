@@ -51,6 +51,7 @@ Explanation To Sample Input 1 :
 For the first test case, the given array A is [1,2,3] therefore the infinite array “B” will be [1,2,3,1,2,3,1,2,3,.......]. So the answer for the given first query is 6 because the sum of the subarray from index 1 to 3 of infinite array “B” i.e. (B[1]+B[2]+B[3]) is 6.
 
 For the given second query is 9 because the sum of the subarray from index 1 to 5 of array “B” .ie (B[1]+B[2]+B[3]+B[4]+B[5]) is 9.
+
 ----------------------------------------
 Sample Input 2 :
 1
@@ -98,3 +99,5 @@ vector<int> sumInRanges(vector<int> &arr, int n, vector<vector<long long>> &quer
     return ans;
     
 }
+
+
