@@ -18,6 +18,7 @@ Assume array starts with 0 index.
 If more than one solution is possible then print the subarray with smaller left index.
 
 
+
 Constraints :
 1 <= N, K <= 10^6
 -10^5 <= A[i] <= 10^5
