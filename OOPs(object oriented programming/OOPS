@@ -107,7 +107,7 @@ In C++, it is possible to inherit attributes and methods from one class to anoth
 
      ->> derived class (child) - the class that inherits from another class
      ->> base class (parent) - the class being inherited from
-     
+-----------------------------------     
 // Base class
 class Vehicle {
   public:
@@ -129,3 +129,6 @@ int main() {
   cout << myCar.brand + " " + myCar.model;
   return 0;
 }
+
+
+
