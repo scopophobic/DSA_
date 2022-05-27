@@ -1,0 +1,131 @@
+What is OOP?
+OOP stands for Object-Oriented Programming.
+
+Object-oriented programming is about creating objects that contain both data and functions.
+-Object-oriented programming has several advantages :-
+         -OOP is faster and easier to execute
+         -OOP provides a clear structure for the programs
+         -OOP helps to keep the C++ code DRY "Don't Repeat Yourself",and makes the code easier to maintain, modify and debug
+          -OOP makes it possible to create full reusable applications with less code and shorter development time
+          
+class and object:
+--------------------------------------------------------------------------------------------------
+practical--
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class emp {
+public:
+    string name;
+    string college;
+    int age;
+    void intro(){
+        cout<<"--------------------------------------"<<endl;
+        cout<<"Name- "<<name<<endl;
+        cout<<"College- "<<college<<endl;
+        cout<<"Age- "<<age<<endl;
+    }
+    emp(string n, string c, int a){
+        name=n;
+        college=c;
+        age=a;
+    }
+};
+
+
+int main(){
+    emp emp1=emp("adithyan","KCC institute",19);
+    emp1.intro();
+
+    emp emp2=emp("adarsh","christ",18);
+    emp2.intro();
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------
+#include <bits/stdc++.h>
+using namespace std;
+
+class emp {
+private:
+    
+    
+    int age;
+public: 
+    string college;
+    string name;
+    void intro(){
+        cout<<"---------------------------------------------"<<endl;
+        cout<<"Name- "<<name<<endl;
+        cout<<"College- "<<college<<endl;
+        cout<<"Age- "<<age<<endl;
+    }
+    emp(string n, string c, int a){
+        name=n;
+        college=c;
+        age=a;
+    }
+    void setage(int a){
+        age=a;
+    }
+    int getage(){
+        return age;
+    }
+};
+
+
+int main(){
+    emp emp1=emp("adithyan","KCC institute",19);
+    emp1.intro();
+
+    emp emp2=emp("adarsh","christ",18);
+    emp2.intro();
+    emp2.setage(19);
+    cout<<emp2.name<<" is "<<emp2.getage()<<" years old "<<endl;
+
+
+    return 0;
+}
+
+Example explained
+
+The salary attribute is private, which have restricted access.
+The public setSalary() method takes a parameter (s) and assigns it to the salary attribute (salary = s).
+The public getSalary() method returns the value of the private salary attribute.
+Inside main(), we create an object of the Employee class. Now we can use the setSalary() method to set the value 
+of the private attribute to 50000. Then we call the getSalary() method on the object to return the value.
+
+
+What is Abstraction in OOP?
+--Abstraction is the concept of object-oriented programming that “shows” only essential 
+attributes and “hides” unnecessary information. The main purpose of abstraction is hiding 
+the unnecessary details from the users.
+
+INHERITANCE:
+In C++, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
+
+     ->> derived class (child) - the class that inherits from another class
+     ->> base class (parent) - the class being inherited from
+     
+// Base class
+class Vehicle {
+  public:
+    string brand = "Ford";
+    void honk() {
+      cout << "Tuut, tuut! \n" ;
+    }
+};
+
+// Derived class
+class Car: public Vehicle {
+  public:
+    string model = "Mustang";
+};
+
+int main() {
+  Car myCar;
+  myCar.honk();
+  cout << myCar.brand + " " + myCar.model;
+  return 0;
+}
