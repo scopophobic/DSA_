@@ -1,4 +1,4 @@
-//basic linked list syntax
+//basic linked_list syntax
 
 #include <iostream>
 using namespace std;
@@ -46,4 +46,6 @@ int main()
   return 0;
   
 }
+
+//happpy coding
   
