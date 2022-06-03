@@ -23,10 +23,10 @@ public:
 
 
 int main(){
-    emp emp1=emp("adithyan","KCC institute",19);
+    emp emp1=emp("Adithyan","KCC Institute Of Technology and Management",19);
     emp1.intro();
 
-    emp emp2=emp("adarsh","christ",18);
+    emp emp2=emp("Adarsh","Christ",18);
     emp2.intro();
     return 0;
 }
