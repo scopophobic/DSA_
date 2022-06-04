@@ -1,5 +1,5 @@
 
-//find fibonacci number of nth place using recursion
+//find fibonacci number of nth place using recursion. BaSICS
 
 #include <iostream>
 using namespace std;
